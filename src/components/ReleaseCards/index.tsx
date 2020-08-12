@@ -8,8 +8,8 @@ interface Props {
 export default function ReleaseCards({ line }: Props): JSX.Element {
   const fileName = line && line.version;
   return (
-    <div>
-      <div>
+    <div className="release-cards">
+      <div className="card">
         <i className="material-icons">cloud</i>
         <p>Windows Installer</p>
         <a
@@ -22,7 +22,7 @@ export default function ReleaseCards({ line }: Props): JSX.Element {
           .x86.msi
         </a>
       </div>
-      <div>
+      <div className="card">
         <i className="material-icons">cloud</i>
         <p>Mac Installer</p>
         <a
@@ -35,7 +35,7 @@ export default function ReleaseCards({ line }: Props): JSX.Element {
           .pkg
         </a>
       </div>
-      <div>
+      <div className="card">
         <i className="material-icons">cloud</i>
         <p>Source Code</p>
         <a

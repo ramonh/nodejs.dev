@@ -7,6 +7,8 @@ import ReleaseCards from '../components/ReleaseCards';
 
 import { detectOS } from '../util/detectOS';
 
+import '../styles/downloads.scss';
+
 export default function DownloadPage(): JSX.Element {
   const releaseHistory = useReleaseHistory().slice(0, 50);
   const [ltsSelected, setLtsSelected] = useState(true);

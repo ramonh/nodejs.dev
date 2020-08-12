@@ -1,0 +1,27 @@
+.release-cards {
+  display: flex;
+  justify-content: space-between;
+  .card {
+    border-radius: 4px;
+    background-color: var(--color-fill-card);
+    padding: 16px;
+
+    i {
+      padding: 12px;
+      border-radius: 24px;
+      font-size: 24px;
+      color: var(--color-brand-primary);
+      background-color: var(--black3);
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--color-text-card);
+    }
+
+    a {
+      color: var(--color-text-card-link);
+    }
+  }
+}
