@@ -1,7 +1,10 @@
 .release-cards {
   display: flex;
   justify-content: space-between;
+
   .card {
+    flex: 1;
+    max-width: 25%;
     border-radius: 4px;
     background-color: var(--color-fill-card);
     padding: 16px;
@@ -12,9 +15,11 @@
       font-size: 24px;
       color: var(--color-brand-primary);
       background-color: var(--black3);
+      margin-bottom: 4px;
     }
 
     p {
+      margin-bottom: 4px;
       font-size: 16px;
       font-weight: 600;
       color: var(--color-text-card);
